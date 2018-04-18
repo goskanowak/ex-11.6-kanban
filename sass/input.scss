@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Kalam:400,700&subset=latin-ext');
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 $fonts: 'Kalam', cursive;;
 $board-color: #ffd58e;
 $white: #fff;
@@ -20,15 +25,10 @@ $grey: #808281;
     box-shadow: 1px 1px 10px $white;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
 .board {
     background-color: $board-color;
     box-shadow: 1px 1px 10px $black;
-    margin: 10px;
+    margin: 2vh;
     max-width: 1400px;
     font-family: $fonts;
     text-align: center;
@@ -41,6 +41,8 @@ $grey: #808281;
     }
     .column-container {
         margin-top: 3%;
+        display: flex;
+        flex-wrap: wrap;
     }
     .column {
         display: inline-block;
@@ -50,8 +52,8 @@ $grey: #808281;
         @extend .button;
         margin: 10px;
         border: 2px dashed $white;
-        text-shadow: 1px 0 7px $black;
-        color: $white;
+        text-shadow: 1px 0 7px $white;
+        color: $black;
         margin-bottom: 3%;
         .column-title {
             display: inline-block;
@@ -85,7 +87,6 @@ $grey: #808281;
             margin-top: 15px;
             font-weight: bold;
         }
-        
     }
     .create-column {
          @extend .button;
@@ -95,8 +96,9 @@ $grey: #808281;
          font-weight: bold;
     }
     .column:nth-child(1n+1) {
-    background-color: #D7E7F2;
-    box-shadow: 0 0 0 5px #D7E7F2;
+        background-color: #D7E7F2;
+        box-shadow: 0 0 0 5px #D7E7F2;
+        min-height: 200px;
     }
     .column:nth-child(2n+1) {
         background-color: #B9F7BA;
@@ -107,31 +109,11 @@ $grey: #808281;
         box-shadow: 0 0 0 5px #CFCBCB;
     }
     button {
-    font-family: $fonts; 
-    display: inline-block;
-    margin: 0 auto;
+        font-family: $fonts; 
+        display: inline-block;
+        margin: 0 auto;
     }
     .card-placeholder {
-    background-color: red;
+        background-color: red;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -108,8 +108,10 @@ $(function() {
     board.addColumn(doneColumn);
     
     var card1 = new Card('New task'),
-        card2 = new Card('New task');
+        card2 = new Card('New task'),
+        card3 = new Card('New task');
 
     todoColumn.addCard(card1);
-    doingColumn.addCard(card2);     
+    doingColumn.addCard(card2);    
+    doneColumn.addCard(card3);
 });
