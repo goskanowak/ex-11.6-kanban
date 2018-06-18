@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css?family=Kalam:400,700&subset=latin-ext");
+* {
+  margin: 0;
+  padding: 0; }
+
+.button, .board .column, .board .column .btn-delete, .board .column .add-card, .board .create-column {
+  color: #000;
+  background-color: #fff;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  border-radius: 15px;
+  box-shadow: 1px 1px 10px #fff; }
+
+.board {
+  background-color: #ffd58e;
+  box-shadow: 1px 1px 10px #000;
+  margin: 2vh;
+  max-width: 1400px;
+  font-family: "Kalam", cursive;
+  text-align: center;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  border-radius: 15px; }
+  .board h1 {
+    font-size: 4em;
+    text-shadow: 5px 1px 15px #fff;
+    text-decoration-line: underline;
+    letter-spacing: .2em; }
+  .board .column-container {
+    margin-top: 3%;
+    display: flex;
+    flex-wrap: wrap; }
+  .board .column {
+    display: inline-block;
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    border: 2px dashed #fff;
+    text-shadow: 1px 0 7px #fff;
+    color: #000;
+    margin-bottom: 3%; }
+    .board .column .column-title {
+      display: inline-block;
+      font-size: 35px;
+      margin: 20px 0;
+      line-height: 40px; }
+    .board .column .column-card-list {
+      list-style: none; }
+    .board .column .btn-delete {
+      display: inline-block;
+      font-size: 25px;
+      padding: 0 10px;
+      margin: 0 15px;
+      line-height: 30px; }
+    .board .column .add-card {
+      display: block;
+      padding: 10px;
+      -webkit-border-radius: 15px;
+      -moz-border-radius: 15px;
+      -ms-border-radius: 15px;
+      border-radius: 15px;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 15px; }
+    .board .column .card-description {
+      display: inline-block;
+      font-size: 25px;
+      margin-top: 15px;
+      font-weight: bold; }
+  .board .create-column {
+    width: 20%;
+    padding: 10px;
+    font-size: 1.5em;
+    font-weight: bold; }
+  .board .column:nth-child(1n+1) {
+    background-color: #D7E7F2;
+    box-shadow: 0 0 0 5px #D7E7F2;
+    min-height: 200px; }
+  .board .column:nth-child(2n+1) {
+    background-color: #B9F7BA;
+    box-shadow: 0 0 0 5px #B9F7BA; }
+  .board .column:nth-child(3n+1) {
+    background-color: #CFCBCB;
+    box-shadow: 0 0 0 5px #CFCBCB; }
+  .board button {
+    font-family: "Kalam", cursive;
+    display: inline-block;
+    margin: 0 auto; }
+  .board .card-placeholder {
+    background-color: red; }
+
+/*# sourceMappingURL=output.css.map */
